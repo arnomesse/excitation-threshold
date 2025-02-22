@@ -2,7 +2,7 @@
 N = 100;                 % number of nodes
 K = 4;                   % average degree
 
-cij = single(triu(rand(N)<K/N & ~eye(N)));
+cij = single(triu(rand(N)<=K/(N-1) & ~eye(N)));
 cij(cij>0) = rand(1,sum(cij(:)));
 cij = cij + cij';
 
@@ -23,7 +23,7 @@ fc = cell(1,n_mthr);
 parfor i=1:n_mthr
     fc{i} = zeros(N);
     for j=1:tir
-        y = Network_SER(cij,mthr(i),t,f,p,round(.1*N))==1;
+        y = network_SER(cij,mthr(i),t,f,p,round(.1*N))==1;
         fc{i} = fc{i}+y*y';
     end
     fc{i} = fc{i}/tir;
@@ -35,7 +35,7 @@ parfor i=1:n_gthr
     thrfc{i} = zeros(N);
     cijtmp = double(cij>gthr(i));
     for j=1:tir
-        y = Network_SER(cijtmp,0,t,f,p,round(.1*N))==1;
+        y = network_SER(cijtmp,0,t,f,p,round(.1*N))==1;
         thrfc{i} = thrfc{i} + y*y';
     end
     thrfc{i} = thrfc{i}/tir;
@@ -50,4 +50,4 @@ figure
 subplot(221), imagesc(1-cij), axis off, colormap(hot), title('weighted random network')
 subplot(222), imagesc(mthr,gthr,matching), colorbar, title('parameter space'), xlabel('model threshold'), ylabel('network threshold')
 subplot(223), plot(mthr,match,'-*'), grid, ylim([0 1]), title('matching'), xlabel('model threshold'), ylabel('correlation')
-subplot(224), plot(mthr,gthr(idthr),'-*',mthr,mthr,'k'), grid, title('threshold agreement'), xlabel('model threshold'), ylabel('predicted network threshold')
+subplot(224), plot(mthr,gthr(idthr),'-*',mthr,mthr,'k'), grid, title('threshold agreement'), xlabel('model threshold'), ylabel('predicted network threshold'), legend({'simu' 'theory'})

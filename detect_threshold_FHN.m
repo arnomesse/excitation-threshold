@@ -31,7 +31,7 @@ end
 inpthr = zeros(na,ncpl);
 for z=1:na*ncpl
     [i,j] = ind2sub([na ncpl],z);
-    y = Network_FHN(double(~eye(2)),cpl(j),tau,t,dt,subsamp,sigma,alpha(i),beta,Ii);
+    y = network_FHN(double(~eye(2)),cpl(j),tau,t,dt,subsamp,sigma,alpha(i),beta,Ii);
     y = [zeros(2,1) diff(y>0,1,2)>0];
     if ~isempty(find(y(2,ceil(ti/subsamp)+1:end), 1)), inpthr(z) = 1; end
 end
@@ -44,7 +44,7 @@ for i=1:na
 end
 
 %% display results
-figure, suptitle('detect FHN threshold')
+figure
 subplot(131), plot(alpha,d,'-*'), grid, xlabel('alpha'), ylabel('d')
 subplot(132), plot(d,cplthr,'-*'), grid, xlabel('d'), ylabel('model threshold')
 subplot(133), semilogx(logspace(-2,-1,10),cplthr(11)./logspace(-2,-1,10),'-*'), grid, xlabel('coupling strength'), ylabel('model threshold')
