@@ -2,12 +2,12 @@
 
 ![Sketch](sketch.png)
 
-# Description
+## Description
 
 Minimal code to reproduce the main findings of ***Messé et al. (2025) Excitable Dynamics Simplify Neural Connectomes***.
 We show how excitable dynamics simplify network representation by making weighted and binary networks dynamically equivalent for an appropriate network threshold.
 
-# Use
+## Use
 
 <code>network_{SER,FHN}.m</code> : Code for simulating the SER model or the Fitzhugh-Nagumo model on networks.
 
@@ -19,7 +19,7 @@ We show how excitable dynamics simplify network representation by making weighte
 
 <code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example applied to the MNIST database (cf. Figure 5 of the paper).
 
-# Reference
+## Reference
 
 If you use this code, please cite:
 
