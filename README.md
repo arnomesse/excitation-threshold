@@ -13,11 +13,11 @@ We show how excitable dynamics simplify network representation by making weighte
 
 <code>coactivation_FHN.m</code> : Code for computing coactivations from Fitzhugh-Nagumo simulations (using a time window integration).
 
-<code>detect_threshold_FHN.m</code> : Code for computing the excitation threshold of the Fitzhugh-Nagumo model.
+<code>detect_threshold_FHN.m</code> : Code for computing the excitation threshold of the Fitzhugh-Nagumo model (cf. Figure S1 of the paper).
 
-<code>mapping_threshold{SER,FHN}.m</code> : Code for computing the correspondence between the model threshold and the network threshold (for the SER model or the the Fitzhugh-Nagumo model).
+<code>mapping_threshold{SER,FHN}.m</code> : Code for computing the correspondence between the model threshold and the network threshold for the SER model or the Fitzhugh-Nagumo model (cf. Figure 2 of the paper).
 
-<code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example applied to the MNIST database.
+<code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example applied to the MNIST database (cf. Figure 5 of the paper).
 
 # Reference
 
