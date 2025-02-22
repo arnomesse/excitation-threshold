@@ -17,7 +17,7 @@ We show how excitable dynamics simplify network representation by making weighte
 
 <code>mapping_threshold{SER,FHN}.m</code> : Code for computing the correspondence between the model threshold and the network threshold (for the SER model or the the Fitzhugh-Nagumo model).
 
-<code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example apply to the MNIST database.
+<code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example applied to the MNIST database.
 
 # Reference
 
