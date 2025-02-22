@@ -24,7 +24,7 @@ un = unique(n);
 if any(un>3)
     warning('lot of neighbors required, results may be inaccurate')
     p(4:max(un)) = 1;
-    f(4:max(un)) = 0.5;
+    f(4:max(un)) = 0.3;
 end
 
 %% SER simulation on weighted graph
