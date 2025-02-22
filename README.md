@@ -23,6 +23,6 @@ We show how excitable dynamics simplify network representation by making weighte
 
 If you use this code, please cite:
 
-Binary Brains: How Excitable Dynamics Simplify Neural Connectomes
-Arnaud Messé, Marc-Thorsten Hütt, Claus C. Hilgetag
-bioRxiv 2024.06.23.600265; doi: https://doi.org/10.1101/2024.06.23.600265
+Arnaud Messé, Marc-Thorsten Hütt, Claus Christian Hilgetag.
+Binary Brains: How Excitable Dynamics Simplify Neural Connectomes.
+bioRxiv 2024.06.23.600265 https://doi.org/10.1101/2024.06.23.600265
