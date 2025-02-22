@@ -15,7 +15,13 @@ We show how excitable dynamics simplify network representation by making weighte
 
 <code>detect_threshold_FHN.m</code> : Code for computing the excitation threshold of the Fitzhugh-Nagumo model (cf. Figure S1 of the paper).
 
-<code>mapping_threshold{SER,FHN}.m</code> : Code for computing the correspondence between the model threshold and the network threshold for the SER model or the Fitzhugh-Nagumo model (cf. Figure 2 of the paper).
+<code>link_usage.m</code> : Code for computing the proportion of excitation explained by a given number of neighbors (cf. Figure S6 of the paper).
+
+<code>multiple_neighbors.m</code> : Code for computing the effective number of neighbors to trigger an excitation and the associated theoretical network threshold (cf. Figures S7 and S8 of the paper).
+
+<code>mapping_threshold_{SER,FHN}.m</code> : Code for computing the correspondence between the model threshold and the network threshold for the SER model or the Fitzhugh-Nagumo model (cf. Figure 2 of the paper).
+
+<code>mapping_threshold_SER_high_threshold.m</code> : Code for computing the correspondence between the model threshold and the network threshold for the SER model when using high threshold values (cf. Figure S8 of the paper).
 
 <code>single_layer_perceptron.py</code> : Code for illustrating the correspondence between the model threshold and the network threshold in a simple Perceptron example applied to the MNIST database (cf. Figure 5 of the paper).
 
