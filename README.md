@@ -1,6 +1,6 @@
 # Excitable Dynamics Simplify Neural Connectomes
 
-!(sketch.png)
+!(sketch.pdf)
 
 # Description
 
